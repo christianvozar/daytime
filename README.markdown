@@ -1,6 +1,6 @@
 # Daytime
 
-Implementation of the Daytime protocol as outlined by [RFC 867](https://tools.ietf.org/html/rfc867).
+Implementation of the Daytime protocol as outlined by [RFC 867](https://tools.ietf.org/html/rfc867). This is implemented as a package in Go and is relatively orthogonal to the net/http package.
 
 # RFC 867
 
