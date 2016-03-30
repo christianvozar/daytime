@@ -28,6 +28,6 @@ Example: `Tuesday, February 22, 1982 17:37:43-PST`
 
 # License
 
-Copyright © 2015 Rogue Ethic
+Copyright © 2015-2016 Christian R. Vozar of Rogue Ethic
 
-Use of this source code is governed by a BSD-style license that can be found in the [LICENSE.markdown](LICENSE.markdown) file.
+Use of this source code is governed by a MIT license that can be found in the [LICENSE.markdown](LICENSE.markdown) file.

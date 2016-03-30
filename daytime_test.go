@@ -1,6 +1,5 @@
-// Copyright © 2015 Rogue Ethic
-// Use of this source code is governed by a BSD-style license that can be found
-// in the LICENSE.markdown file.
+// Copyright © 2015-2016 Christian R. Vozar
+// MIT Licensed.
 
 package daytime
 

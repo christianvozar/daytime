@@ -1,6 +1,5 @@
-// Copyright © 2015 Rogue Ethic
-// Use of this source code is governed by a BSD-style license that can be found
-// in the LICENSE.markdown file.
+// Copyright © 2015-2016 Christian R. Vozar
+// MIT Licensed.
 
 // Daytime server. See RFC 867
 // https://tools.ietf.org/html/rfc867
@@ -14,13 +13,13 @@ import (
 
 // Server defines parameters for running a Daytime server.
 type Server struct {
-	Addr string // TCP address to listen on, RFC 867 default of ":13" if empty
+	Address string // TCP address to listen on, RFC 867 default of ":13" if empty
 }
 
-// ListenAndServe listens on the TCP network address srv.Addr and handles
+// ListenAndServe listens on the TCP network address srv.Address and handles
 // requests on incoming connections.
 func (srv *Server) ListenAndServe() error {
-	addr := srv.Addr
+	addr := srv.Address
 	if addr == "" {
 		addr = ":13"
 	}
@@ -51,6 +50,6 @@ func (srv *Server) ListenAndServe() error {
 // ListenAndServe listens on the TCP network address addr and serves Daytime
 // protocol requests in a new goroutine.
 func ListenAndServe(addr string) error {
-	server := &Server{Addr: addr}
+	server := &Server{Address: addr}
 	return server.ListenAndServe()
 }
